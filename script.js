@@ -122,7 +122,10 @@ const RESOURCE_BANDS = {
                      ar: "ألغاز برمجية موجّهة للمبتدئين، مع شهادة عند الإتمام." } },
           { name: "Prodigy Math", url: "https://www.prodigygame.com/", cert: false,
             desc: { en: "A math adventure game used in classrooms — practice disguised as play.",
-                     ar: "لعبة مغامرات رياضية تُستخدم في الصفوف — تدريب في هيئة لعب." } }
+                     ar: "لعبة مغامرات رياضية تُستخدم في الصفوف — تدريب في هيئة لعب." } },
+          { name: "CSforAll — Hour of AI", url: "https://csforall.org/en-US/activities/hour-of-ai", cert: false,
+            desc: { en: "Short, playful activities that introduce how AI works — filter by age to find easy ones.",
+                     ar: "أنشطة قصيرة وممتعة تشرح كيف يعمل الذكاء الاصطناعي — صفّها حسب العمر لإيجاد الأسهل." } }
         ]
       }
     ]
@@ -160,7 +163,10 @@ const RESOURCE_BANDS = {
                      ar: "تعلّم صياغة البرمجة الحقيقية بتوجيه شخصية عبر ألغاز." } },
           { name: "TypingClub", url: "https://www.typingclub.com/", cert: true,
             desc: { en: "Turn typing practice into a skill you'll actually use for years.",
-                     ar: "حوّل تدريب الكتابة إلى مهارة ستستخدمها فعلاً لسنوات." } }
+                     ar: "حوّل تدريب الكتابة إلى مهارة ستستخدمها فعلاً لسنوات." } },
+          { name: "CSforAll — Hour of AI", url: "https://csforall.org/en-US/activities/hour-of-ai", cert: false,
+            desc: { en: "Hands-on AI activities you can filter by topic, length, and difficulty.",
+                     ar: "أنشطة عملية عن الذكاء الاصطناعي يمكنك تصفيتها حسب الموضوع والمدة والصعوبة." } }
         ]
       }
     ]
@@ -201,7 +207,10 @@ const RESOURCE_BANDS = {
                      ar: "مسارات برمجية عملية في تطوير الويب وبايثون وعلوم البيانات وغيرها." } },
           { name: "Google Applied Digital Skills", url: "https://applieddigitalskills.withgoogle.com/", cert: true,
             desc: { en: "Project-based lessons — spreadsheets, presentations, basic automation.",
-                     ar: "دروس قائمة على مشاريع — جداول بيانات، عروض تقديمية، أتمتة أساسية." } }
+                     ar: "دروس قائمة على مشاريع — جداول بيانات، عروض تقديمية، أتمتة أساسية." } },
+          { name: "CSforAll — Hour of AI", url: "https://csforall.org/en-US/activities/hour-of-ai", cert: false,
+            desc: { en: "A large library of AI activities — filter by topic, programming language, or length to go deeper.",
+                     ar: "مكتبة كبيرة من أنشطة الذكاء الاصطناعي — صفّها حسب الموضوع أو لغة البرمجة أو المدة للتعمّق أكثر." } }
         ]
       }
     ]

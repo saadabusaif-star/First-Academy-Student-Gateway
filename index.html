@@ -24,20 +24,11 @@
     </div>
   </div>
 
-  <!-- Official bilingual letterhead: English fixed left, Arabic fixed right,
-       logo centered — this block does not change with the EN/AR toggle. -->
+  <!-- Official bilingual letterhead: flag + English on the left,
+       small logo + Arabic on the right — this block does not
+       change with the EN/AR toggle. -->
   <div class="letterhead">
-    <div class="letter-col en">
-      <p>UNITED ARAB EMIRATES</p>
-      <p>MINISTRY OF EDUCATION</p>
-      <p class="strong">THE FIRST ACADEMY – PRIVATE</p>
-      <p>AJMAN</p>
-    </div>
-
-    <div class="letter-center">
-      <div class="logo-ring">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4bcqYCf6vl8HjqyLT_uE8tNqEz8euqWq0Z9y0kgCaVQ&s=10" alt="The First Academy logo">
-      </div>
+    <div class="letter-side left">
       <div class="flag-uae" role="img" aria-label="Flag of the United Arab Emirates">
         <svg viewBox="0 0 100 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="100" height="60" fill="#FFFFFF"/>
@@ -46,13 +37,22 @@
           <rect width="25" height="60" fill="#FF0000"/>
         </svg>
       </div>
+      <div class="letter-col en">
+        <p class="strong">UNITED ARAB EMIRATES</p>
+        <p>MINISTRY OF EDUCATION</p>
+        <p>THE FIRST ACADEMY – PRIVATE, AJMAN</p>
+      </div>
     </div>
 
-    <div class="letter-col ar" dir="rtl">
-      <p>الإمارات العربية المتحدة</p>
-      <p>وزارة التربية والتعليم</p>
-      <p class="strong">مدرسة الأكاديمية الأولى الخاصة</p>
-      <p>عجمان</p>
+    <div class="letter-side right" dir="rtl">
+      <div class="letter-col ar">
+        <p class="strong">الإمارات العربية المتحدة</p>
+        <p>وزارة التربية والتعليم</p>
+        <p>مدرسة الأكاديمية الأولى الخاصة - عجمان</p>
+      </div>
+      <div class="logo-badge">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4bcqYCf6vl8HjqyLT_uE8tNqEz8euqWq0Z9y0kgCaVQ&s=10" alt="The First Academy logo">
+      </div>
     </div>
   </div>
 
