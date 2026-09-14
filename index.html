@@ -17,41 +17,50 @@
 <!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="top-bar">
-    <div class="ministry-line">
-      <span data-i18n="ministryLine">وزارة التربية والتعليم · Ministry of Education, UAE</span>
-    </div>
+    <span class="top-bar-note">🇦🇪 <span data-i18n="taglineBadge">Building Brave Tomorrow</span></span>
     <div class="lang-toggle" role="group" aria-label="Language">
       <button type="button" id="btnEn" class="active">EN</button>
       <button type="button" id="btnAr">عربي</button>
     </div>
   </div>
 
-  <div class="header-grid">
-    <div class="brand">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4bcqYCf6vl8HjqyLT_uE8tNqEz8euqWq0Z9y0kgCaVQ&s=10" alt="The First Academy logo">
-      <div class="brand-text">
-        <div class="school-name brand-font" data-i18n="schoolName">THE FIRST ACADEMY</div>
-        <div class="school-tag" data-i18n="schoolTag">Student Gateway</div>
+  <!-- Official bilingual letterhead: English fixed left, Arabic fixed right,
+       logo centered — this block does not change with the EN/AR toggle. -->
+  <div class="letterhead">
+    <div class="letter-col en">
+      <p>UNITED ARAB EMIRATES</p>
+      <p>MINISTRY OF EDUCATION</p>
+      <p class="strong">THE FIRST ACADEMY – PRIVATE</p>
+      <p>AJMAN</p>
+    </div>
+
+    <div class="letter-center">
+      <div class="logo-ring">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4bcqYCf6vl8HjqyLT_uE8tNqEz8euqWq0Z9y0kgCaVQ&s=10" alt="The First Academy logo">
+      </div>
+      <div class="flag-uae" role="img" aria-label="Flag of the United Arab Emirates">
+        <svg viewBox="0 0 100 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="60" fill="#FFFFFF"/>
+          <rect width="100" height="20" fill="#00732F"/>
+          <rect y="40" width="100" height="20" fill="#000000"/>
+          <rect width="25" height="60" fill="#FF0000"/>
+        </svg>
       </div>
     </div>
 
-    <div class="tagline-badge" data-i18n="taglineBadge">Building Brave Tomorrow</div>
-
-    <div class="flag-uae" role="img" aria-label="Flag of the United Arab Emirates">
-      <svg viewBox="0 0 100 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="60" fill="#FFFFFF"/>
-        <rect width="100" height="20" fill="#00732F"/>
-        <rect y="40" width="100" height="20" fill="#000000"/>
-        <rect width="25" height="60" fill="#FF0000"/>
-      </svg>
+    <div class="letter-col ar" dir="rtl">
+      <p>الإمارات العربية المتحدة</p>
+      <p>وزارة التربية والتعليم</p>
+      <p class="strong">مدرسة الأكاديمية الأولى الخاصة</p>
+      <p>عجمان</p>
     </div>
   </div>
 
   <nav class="site-nav" aria-label="Section navigation">
     <div class="wrap">
-      <a href="#grades" data-i18n="navGrades">Pick your grade</a>
-      <a href="#safety" data-i18n="navSafety">Why these links</a>
-      <a href="#contact" data-i18n="navContact">Contact</a>
+      <a href="#grades"><span class="nav-icon">🎯</span><span data-i18n="navGrades">Pick your grade</span></a>
+      <a href="#safety"><span class="nav-icon">🛡️</span><span data-i18n="navSafety">Why these links</span></a>
+      <a href="#contact"><span class="nav-icon">✉️</span><span data-i18n="navContact">Contact</span></a>
     </div>
   </nav>
 </header>
@@ -89,7 +98,7 @@
   <section class="grades" id="grades">
     <div class="wrap">
       <div class="section-head">
-        <h2 data-i18n="gradesTitle">Which grade are you in?</h2>
+        <h2>🎓 <span data-i18n="gradesTitle">Which grade are you in?</span></h2>
         <p data-i18n="gradesDesc">Tap your number — the list below changes to match your age group.</p>
       </div>
 
@@ -109,7 +118,7 @@
   <section class="safety" id="safety">
     <div class="wrap">
       <div class="section-head">
-        <h2 data-i18n="safetyTitle">Why these links, and not others?</h2>
+        <h2>🛡️ <span data-i18n="safetyTitle">Why these links, and not others?</span></h2>
       </div>
       <div class="safety-grid">
         <div class="info-card">
