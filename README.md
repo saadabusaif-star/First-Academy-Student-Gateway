@@ -1,67 +1,46 @@
-# The First Academy — Student Gateway (v2)
+# The First Academy — Student Gateway (v3)
 
-A playful, bilingual (English / Arabic) landing page for students: pick your
-grade (4–12), get a short list of vetted learning sites and skill-building
-games — no shooters, no open social sandboxes like Roblox.
+A bilingual (English / عربي) "game lobby" for students who have finished their
+class tasks: meaningful learning games, AI adventures and certificate courses,
+filtered by **grade, interest, type and time**.
 
-Redesigned to match the school's real navy-and-gold brand identity and logo,
-with a one-tap EN ⇄ عربي switch (full right-to-left layout in Arabic).
+Live: https://saadabusaif-star.github.io/First-Academy-Student-Gateway/
+
+## What's new in v3
+- **97 hand-picked activities** — 43 from the CSforAll / Code.org *Hour of AI*
+  library (student-playable games and self-led projects only; teacher lesson
+  plans, robot-kit activities and Roblox removed) plus trusted sites such as
+  Teachable Machine, PhET, Blockly Games, SQL Murder Mystery, Bad News,
+  picoCTF, Wokwi, Madrasa and Edraak.
+- **Finder**: grade chips (4–12), 9 interest tiles, type (games / create /
+  puzzles / courses), time (≤20 min / ~1 hour / longer), toggles for
+  *certificate only*, *Hour of AI only*, *no login / webcam needed*, search,
+  and a 🎲 **Surprise me** button.
+- **Grade 11–12 certificate pathways**: Python Programmer, AI Explorer, Cyber
+  Defender, Web Developer — free certificates from Harvard CS50, Kaggle,
+  Cisco NetAcad, IBM SkillsBuild, University of Helsinki, freeCodeCamp.
+- **Learning passport**: students tick "Done", earn XP and levels
+  (Explorer → Legend), save favourites, and after 3 activities print a
+  bilingual **Gateway certificate** listing what they completed, with a line
+  for the teacher's signature. Progress is saved in the student's own browser.
+- Free-time rules section, full Arabic RTL layout, mobile friendly.
 
 ## Files
-- `index.html` — the page (header, hero, grade picker, safety cards, footer)
-- `style.css` — all styling, using the school's brand colors
-- `script.js` — grade data (English + Arabic), the language switch, and the
-  logic that swaps resources when a grade is picked
+| File | What it holds |
+|---|---|
+| `index.html` | Page structure |
+| `style.css`  | Navy-and-gold design |
+| `data.js`    | **All activities and pathways — edit this to add/remove links** |
+| `app.js`     | Filters, cards, passport, certificate, EN/AR switch |
 
-## Host it on GitHub Pages (free)
+(`script.js` from v2 is no longer used.)
 
-1. Create a new GitHub repository, e.g. `first-academy-gateway`.
-2. Upload `index.html`, `style.css`, `script.js` to the repo root — drag-and-
-   drop on github.com works, or:
-   ```bash
-   git init
-   git add index.html style.css script.js README.md
-   git commit -m "Student gateway site"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/first-academy-gateway.git
-   git push -u origin main
-   ```
-3. On GitHub: **Settings → Pages → Source → Deploy from a branch → `main` /
-   `root`** → Save.
-4. Live in a minute or two at:
-   `https://<your-username>.github.io/first-academy-gateway/`
-5. Optional: if the school owns `firstacademy.org` (or a subdomain), add a
-   `CNAME` file in the repo root with just that domain, and point DNS at
-   `<your-username>.github.io`.
+## Adding an activity
+Copy any line in `data.js`, give it a new `id`, and fill in the fields
+described at the top of that file (grade range, interests, type, time,
+certificate yes/no, English + Arabic description).
 
-## About the logo and photo
-
-The header logo and hero photo currently point at the two image links you
-shared — both are Google's cached thumbnail versions, so they're small and
-may not stay available long-term. Before publishing, swap them for real
-files hosted in the repo:
-
-1. Save the official logo as `assets/logo.png` (transparent background,
-   at least 200×200px looks best).
-2. In `index.html`, replace the `<img src="https://encrypted-tbn0...">` in
-   the `.brand` block with `<img src="assets/logo.png" alt="The First
-   Academy logo">`.
-3. Do the same for the hero photo (`assets/hero.jpg`) in the `.hero-photo`
-   block.
-
-## Things to double-check before publishing
-
-- **Resource lists**: everything a student sees lives in `RESOURCE_BANDS`
-  at the top of `script.js`, with English and Arabic text side by side for
-  each item. Add, remove, or re-grade any link there.
-- **Arabic wording**: I've translated everything, but it's worth a native
-  speaker's once-over before this goes live school-wide.
-- **Contact email / links**: update the footer's email and the "Main
-  school website" link.
-
-## Why these particular resources
-
-Every linked site teaches a real, transferable skill (coding, math,
-language, digital literacy), and many issue a certificate or badge on
-completion — good for a student portfolio. Nothing with unmoderated chat,
-ad-heavy pages, or open-world social sandboxes was included.
+## Before going school-wide
+- Swap the Google-thumbnail logo URL in `index.html` for `assets/logo.png`.
+- Ask a native speaker to skim the Arabic descriptions.
+- Minecraft Education activities need the student's school Microsoft login.
